@@ -1,14 +1,32 @@
 import Image from 'next/image'
 
 export default function Navbar() {
+  const menuItems = [
+    { href: '#for-who', label: 'Para quem' },
+    { href: '#services', label: 'Serviços' },
+    { href: '#how-we-work', label: 'Como trabalhamos' },
+    { href: '#contact', label: 'Contato' },
+  ];
+
   return (
-    <nav className="flex items-center justify-between px-8 py-5 border-b border-gray-100 sticky top-0 bg-white/80 backdrop-blur-sm z-50">
+    <header className="flex items-center justify-between px-8 h-20 border-b sticky top-0 bg-white backdrop-blur-sm z-20">
       <Image
         src="/logo.png"
         alt="Plazas Tech"
-        width={120}
-        height={40}
+        width={70}
+        height={20}
       />
+      <nav>
+        <ul className="flex gap-6">
+          {menuItems.map((item) => (
+            <li key={item.href}>
+              <a href={item.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
       <a
         href="https://wa.me/5517981629037"
         target="_blank"
@@ -17,6 +35,6 @@ export default function Navbar() {
       >
         Vamos conversar →
       </a>
-    </nav>
+    </header>
   )
 }

@@ -1,6 +1,6 @@
 export default function ForWho() {
   return (
-    <section className="px-8 py-20 bg-[#1E0A5C] text-white">
+    <section id="for-who" className="px-8 bg-[#1E0A5C] text-white min-h-screen flex flex-col justify-center">
       <p className="text-xs font-medium tracking-widest uppercase text-[#00D4FF] mb-6">
         Para quem é a Plazas Tech
       </p>

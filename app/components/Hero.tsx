@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="px-8 py-24 max-w-4xl">
+    <section className="px-8 max-w-4xl min-h-[calc(100vh-5rem)] flex flex-col justify-center">
       <p className="text-sm font-medium tracking-widest uppercase text-gray-400 mb-6 flex items-center gap-3">
         <span className="inline-block w-6 h-0.5 bg-[#00D4FF]"></span>
         Software House — Brasil
@@ -16,7 +16,7 @@ export default function Hero() {
         href="https://wa.me/5517981629037"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-[#00D4FF] text-[#1E0A5C] font-medium px-8 py-3.5 hover:opacity-90 transition-opacity inline-block"
+        className="bg-[#00D4FF] text-[#1E0A5C] font-medium px-4 py-2.5 hover:opacity-90 transition-opacity inline-block"
       >
         Vamos conversar →
       </a>

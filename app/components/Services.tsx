@@ -23,7 +23,7 @@ export default function Services() {
   ]
 
   return (
-    <section className="px-8 py-20">
+    <section id="services" className="px-8 min-h-screen flex flex-col justify-center">
       <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
         O que a Plazas Tech faz
       </p>
