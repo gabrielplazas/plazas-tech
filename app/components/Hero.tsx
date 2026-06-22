@@ -9,8 +9,8 @@ export default function Hero() {
       {/* Decorative glowing gradient mesh */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] bg-gradient-to-tr from-[#00D4FF]/15 to-[#6B21C8]/10 rounded-full blur-[80px] sm:blur-[120px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto w-full relative z-10 flex flex-col items-start md:items-center text-left md:text-center">
-        <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-gray-400 mb-6 flex items-center gap-3">
+      <div className="max-w-6xl mx-auto w-full relative z-10 flex flex-col items-center text-center">
+        <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-gray-400 mb-6 flex items-center gap-3 justify-center">
           <span className="inline-block w-6 h-0.5 bg-[#00D4FF]"></span>
           Software House — Brasil
         </p>
@@ -22,12 +22,12 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="text-base sm:text-xl text-gray-500 font-light max-w-2xl mb-10 leading-relaxed">
+        <p className="text-base sm:text-xl text-gray-500 font-light max-w-2xl mb-10 leading-relaxed mx-auto">
           A Plazas Tech transforma conceitos inovadores em sites rápidos, sistemas robustos e 
           aplicativos fluidos — com transparência, clareza e alto nível técnico do início ao fim.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        <div className="flex justify-center w-full">
           <a
             href={siteConfig.links.whatsapp}
             target="_blank"
@@ -35,12 +35,6 @@ export default function Hero() {
             className="inline-flex items-center justify-center gap-2 bg-[#00D4FF] hover:bg-[#00D4FF]/95 text-[#1E0A5C] font-bold px-8 py-4 rounded-full shadow-lg shadow-[#00D4FF]/25 hover:shadow-xl hover:shadow-[#00D4FF]/35 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 text-base"
           >
             Vamos conversar →
-          </a>
-          <a
-            href="#services"
-            className="inline-flex items-center justify-center gap-2 bg-gray-50 hover:bg-gray-100/80 text-gray-600 font-semibold px-8 py-4 rounded-full border border-gray-200/60 transition-all duration-300 text-base"
-          >
-            Conhecer serviços
           </a>
         </div>
       </div>
