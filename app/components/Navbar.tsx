@@ -1,40 +1,109 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { Menu, X } from 'lucide-react'
+import { siteConfig } from '@/config/site'
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
+
   const menuItems = [
     { href: '#for-who', label: 'Para quem' },
     { href: '#services', label: 'Serviços' },
     { href: '#how-we-work', label: 'Como trabalhamos' },
     { href: '#contact', label: 'Contato' },
-  ];
+  ]
 
   return (
-    <header className="flex items-center justify-between px-8 h-20 border-b sticky top-0 bg-white backdrop-blur-sm z-20">
-      <Image
-        src="/logo.png"
-        alt="Plazas Tech"
-        width={70}
-        height={20}
-      />
-      <nav>
-        <ul className="flex gap-6">
+    <header className="flex items-center justify-between px-6 md:px-12 h-20 border-b border-gray-100 sticky top-0 bg-white/80 backdrop-blur-md z-30 transition-all duration-300">
+      {/* Logo */}
+      <a href="#" className="hover:opacity-90 transition-opacity">
+        <Image
+          src="/logo.png"
+          alt="Plazas Tech"
+          width={75}
+          height={35}
+          priority
+        />
+      </a>
+
+      {/* Desktop Navigation */}
+      <nav className="hidden md:block">
+        <ul className="flex gap-8">
           {menuItems.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+              <a
+                href={item.href}
+                className="text-sm font-medium text-gray-500 hover:text-[#1E0A5C] hover:scale-105 transition-all duration-200 block"
+              >
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
       </nav>
-      <a
-        href="https://wa.me/5517981629037"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-[#00D4FF] text-[#1E0A5C] font-medium text-sm px-5 py-2.5 hover:opacity-90 transition-opacity"
+
+      {/* Action Button & Mobile Toggle */}
+      <div className="flex items-center gap-4">
+        <a
+          href={siteConfig.links.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden sm:inline-flex items-center justify-center bg-[#00D4FF] hover:bg-[#00D4FF]/90 text-[#1E0A5C] font-semibold text-sm px-6 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+        >
+          Vamos conversar →
+        </a>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="p-2 text-gray-500 hover:text-[#1E0A5C] rounded-lg md:hidden transition-colors focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Drawer Overlay */}
+      <div
+        className={`fixed inset-x-0 bottom-0 top-20 bg-white/95 backdrop-blur-xl border-t border-gray-100 flex flex-col p-8 gap-6 z-20 md:hidden transition-all duration-300 ease-in-out ${isOpen
+          ? 'opacity-100 translate-y-0 pointer-events-auto'
+          : 'opacity-0 -translate-y-4 pointer-events-none'
+          }`}
       >
-        Vamos conversar →
-      </a>
+        <nav className="flex flex-col gap-6">
+          {menuItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={() => setIsOpen(false)}
+              className="text-lg font-semibold text-gray-600 hover:text-[#1E0A5C] transition-colors py-2 border-b border-gray-50"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+        <a
+          href={siteConfig.links.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex items-center justify-center bg-[#00D4FF] text-[#1E0A5C] font-bold text-base py-4 rounded-2xl shadow-md"
+        >
+          Vamos conversar →
+        </a>
+      </div>
     </header>
   )
 }

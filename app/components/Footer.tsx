@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { siteConfig } from '@/config/site'
 
 export default function Footer() {
   return (
@@ -14,11 +15,11 @@ export default function Footer() {
                 alt="Plazas Tech Logo"
                 width={80}
                 height={23}
-                className="brightness-0 invert opacity-80"
+                className="brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
               />
             </div>
-            <p className="text-sm font-light max-w-sm leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat metus at diam convallis, sit amet scelerisque eros tristique.
+            <p className="text-sm font-light max-w-sm leading-relaxed text-gray-400">
+              Conectamos sua ideia ao código. Desenvolvemos sites de alto impacto, sistemas web otimizados e aplicativos sob medida com comprometimento real do início ao fim.
             </p>
           </div>
 
@@ -27,16 +28,16 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Navegação</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#for-who" className="hover:text-white transition-colors">Para quem</a>
+                <a href="#for-who" className="hover:text-[#00D4FF] hover:translate-x-1 transition-all duration-200 inline-block">Para quem</a>
               </li>
               <li>
-                <a href="#services" className="hover:text-white transition-colors">Serviços</a>
+                <a href="#services" className="hover:text-[#00D4FF] hover:translate-x-1 transition-all duration-200 inline-block">Serviços</a>
               </li>
               <li>
-                <a href="#how-we-work" className="hover:text-white transition-colors">Como trabalhamos</a>
+                <a href="#how-we-work" className="hover:text-[#00D4FF] hover:translate-x-1 transition-all duration-200 inline-block">Como trabalhamos</a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-white transition-colors">Contato</a>
+                <a href="#contact" className="hover:text-[#00D4FF] hover:translate-x-1 transition-all duration-200 inline-block">Contato</a>
               </li>
             </ul>
           </div>
@@ -46,13 +47,13 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Outros</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
+                <a href="/termos-de-uso" className="hover:text-[#00D4FF] hover:translate-x-1 transition-all duration-200 inline-block">Termos de Uso</a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
+                <a href="/politica-de-privacidade" className="hover:text-[#00D4FF] hover:translate-x-1 transition-all duration-200 inline-block">Política de Privacidade</a>
               </li>
               <li>
-                <span className="text-xs text-gray-600 block mt-2">São José do Rio Preto, SP</span>
+                <span className="text-xs text-gray-600 block mt-2">{siteConfig.contact.location}</span>
               </li>
             </ul>
           </div>

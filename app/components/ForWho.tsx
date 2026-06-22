@@ -1,19 +1,65 @@
+import { UserCheck, Eye, Zap } from 'lucide-react'
+
 export default function ForWho() {
+  const benefits = [
+    {
+      icon: UserCheck,
+      title: "Parceria Direta",
+      description: "Esqueça gerentes de conta ou intermediários burocráticos. Na Plazas Tech, você tem contato direto com os sócios e desenvolvedores que estãoconstruindo sua solução."
+    },
+    {
+      icon: Eye,
+      title: "Transparência Absoluta",
+      description: "Acompanhe o desenvolvimento com reuniões semanais e visibilidade contínua do progresso. Você sempre saberá exatamente em que etapa o projeto está."
+    },
+    {
+      icon: Zap,
+      title: "Arquitetura Moderna & Performance",
+      description: "Escrevemos códigos limpos e rápidos. Focamos em tecnologias modernas para garantir carregamento instantâneo, escalabilidade e excelente otimização para SEO."
+    },
+  ]
+
   return (
-    <section id="for-who" className="px-8 bg-[#1E0A5C] text-white min-h-screen flex flex-col justify-center">
-      <p className="text-xs font-medium tracking-widest uppercase text-[#00D4FF] mb-6">
-        Para quem é a Plazas Tech
-      </p>
-      <p className="text-lg font-light leading-relaxed max-w-2xl text-gray-300 mb-6">
-        Você tem uma ideia ou um problema no seu negócio que precisa de
-        tecnologia para resolver. Mas não quer contratar uma empresa enorme
-        que vai te passar pra fila e sumir.
-      </p>
-      <p className="text-lg font-light leading-relaxed max-w-2xl text-white">
-        A Plazas Tech trabalha diferente. Cada projeto recebe atenção real,
-        comunicação direta e desenvolvimento feito com cuidado — do primeiro
-        contato à entrega final.
-      </p>
+    <section id="for-who" className="relative overflow-hidden px-6 md:px-12 py-24 bg-[#1E0A5C] text-white min-h-screen flex flex-col justify-center">
+      {/* Glow backgrounds */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#00D4FF]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#6B21C8]/10 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto w-full relative z-10">
+        <div className="max-w-3xl mb-16">
+          <p className="text-xs font-semibold tracking-widest uppercase text-[#00D4FF] mb-3">
+            Para quem é a Plazas Tech
+          </p>
+          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight leading-tight">
+            Sua ideia desenvolvida com <br className="hidden sm:inline" />
+            <span className="text-[#00D4FF]">compromisso e proximidade real.</span>
+          </h2>
+          <p className="text-gray-300 text-base sm:text-lg font-light mt-4 leading-relaxed">
+            Unimos proximidade humana com excelência em engenharia de software para tirar suas ideias do papel com qualidade máxima.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mt-8">
+          {benefits.map((benefit, idx) => {
+            const Icon = benefit.icon
+            return (
+              <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-[#00D4FF]/20 hover:bg-white/[0.04] transition-all duration-300">
+                <div className="p-3 bg-[#00D4FF]/10 text-[#00D4FF] rounded-xl shadow-inner">
+                  <Icon size={24} />
+                </div>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-300 text-sm sm:text-base font-light leading-relaxed">
+                    {benefit.description}
+                  </p>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
     </section>
   )
 }
