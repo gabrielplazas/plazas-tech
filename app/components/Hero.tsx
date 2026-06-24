@@ -2,7 +2,7 @@ import { siteConfig } from '@/config/site'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[calc(100vh-5rem)] flex flex-col justify-center px-6 md:px-12 py-20 bg-white">
+    <section id="home" className="relative overflow-hidden min-h-[calc(100vh-5rem)] flex flex-col justify-center px-6 md:px-12 py-20 bg-white">
       {/* Decorative SaaS dot-grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,#000_70%,transparent_100%)] pointer-events-none" />
 

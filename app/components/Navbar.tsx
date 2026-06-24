@@ -20,6 +20,7 @@ export default function Navbar() {
   }, [isOpen])
 
   const menuItems = [
+    { href: '#home', label: 'Home' },
     { href: '#for-who', label: 'Para quem' },
     { href: '#services', label: 'Serviços' },
     { href: '#how-we-work', label: 'Como trabalhamos' },
