@@ -4,7 +4,7 @@ export const siteConfig = {
   contact: {
     phoneFormatted: "+55 (17) 98162-9037",
     phoneRaw: "5517981629037",
-    email: "contato@plazas.tech",
+    email: "plazastech@outlook.com",
     location: "São José do Rio Preto - SP, Brasil",
   },
   links: {
