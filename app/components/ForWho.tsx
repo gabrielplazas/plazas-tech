@@ -26,7 +26,7 @@ export default function ForWho() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#6B21C8]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto w-full relative z-10">
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mx-auto mb-16 text-center flex flex-col items-center">
           <p className="text-xs font-semibold tracking-widest uppercase text-[#00D4FF] mb-3">
             Para quem é a Plazas Tech
           </p>
@@ -34,21 +34,21 @@ export default function ForWho() {
             Sua ideia desenvolvida com <br className="hidden sm:inline" />
             <span className="text-[#00D4FF]">compromisso e proximidade real.</span>
           </h2>
-          <p className="text-gray-300 text-base sm:text-lg font-light mt-4 leading-relaxed">
+          <p className="text-gray-300 text-base sm:text-lg font-light mt-6 leading-relaxed">
             Unimos proximidade humana com excelência em engenharia de software para tirar suas ideias do papel com qualidade máxima.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mt-8">
           {benefits.map((benefit, idx) => {
             const Icon = benefit.icon
             return (
-              <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-[#00D4FF]/20 hover:bg-white/[0.04] transition-all duration-300">
-                <div className="p-3 bg-[#00D4FF]/10 text-[#00D4FF] rounded-xl shadow-inner">
-                  <Icon size={24} />
+              <div key={idx} className="flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-[#00D4FF]/20 hover:bg-white/[0.04] transition-all duration-300">
+                <div className="p-4 bg-[#00D4FF]/10 text-[#00D4FF] rounded-2xl shadow-inner mb-2">
+                  <Icon size={32} />
                 </div>
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
+                  <h3 className="text-xl font-bold text-white mb-3">
                     {benefit.title}
                   </h3>
                   <p className="text-gray-300 text-sm sm:text-base font-light leading-relaxed">

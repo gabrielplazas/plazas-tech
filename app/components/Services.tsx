@@ -23,7 +23,7 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="relative overflow-hidden px-6 md:px-12 py-24 min-h-screen flex flex-col justify-center bg-white">
+    <section id="services" className="relative overflow-hidden px-6 md:px-12 py-24 min-h-screen flex flex-col justify-center bg-[#0a0214]">
       <div className="max-w-6xl mx-auto w-full">
         <div className="text-left md:text-center max-w-2xl mx-auto mb-16">
           <p className="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-3">

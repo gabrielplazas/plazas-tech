@@ -52,7 +52,7 @@ export default function CtaFinal() {
 
           {/* Right side: Secondary Contacts Card */}
           <div className="lg:col-span-5 w-full">
-            <div className="bg-white/[0.02] backdrop-blur-md border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden">
+            <div className="bg-white/[0.02] backdrop-blur-md border border-white/10 rounded-md p-8 shadow-2xl relative overflow-hidden">
               {/* Subtle top-right glow in the card */}
               <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#00D4FF]/10 rounded-full blur-2xl pointer-events-none" />
 
