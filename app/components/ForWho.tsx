@@ -27,7 +27,7 @@ export default function ForWho() {
 
       <div className="max-w-6xl mx-auto w-full relative z-10">
         <div className="max-w-3xl mx-auto mb-16 text-center flex flex-col items-center">
-          <p className="text-xs font-semibold tracking-widest uppercase text-[#00D4FF] mb-3">
+          <p className="text-xs font-semibold tracking-widest uppercase text-[#00000] mb-3">
             Para quem é a Plazas Tech
           </p>
           <h2 className="text-3xl sm:text-5xl font-bold tracking-tight leading-tight">
