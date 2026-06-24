@@ -13,9 +13,9 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="Plazas Tech Logo"
-                width={80}
-                height={23}
-                className="brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+                width={75}
+                height={35}
+                className="opacity-90 hover:opacity-100 transition-opacity"
               />
             </div>
             <p className="text-sm font-light max-w-sm leading-relaxed text-gray-400">
