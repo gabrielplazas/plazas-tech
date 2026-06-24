@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer id="footer" className="bg-gray-950 text-gray-400 py-16 px-8 border-t border-gray-900">
       <div className="max-w-6xl mx-auto w-full">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           
           {/* Logo and Tagline */}
           <div className="md:col-span-2 space-y-4">
@@ -42,21 +42,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal / Social placeholder */}
-          <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Outros</h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <a href="/termos-de-uso" className="hover:text-[#00D4FF] hover:translate-x-1 transition-all duration-200 inline-block">Termos de Uso</a>
-              </li>
-              <li>
-                <a href="/politica-de-privacidade" className="hover:text-[#00D4FF] hover:translate-x-1 transition-all duration-200 inline-block">Política de Privacidade</a>
-              </li>
-              <li>
-                <span className="text-xs text-gray-600 block mt-2">{siteConfig.contact.location}</span>
-              </li>
-            </ul>
-          </div>
+
 
         </div>
 
