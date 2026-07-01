@@ -5,7 +5,7 @@ export default function HowWeWork() {
     {
       icon: Search,
       number: "01",
-      title: "Ouvimos em português claro",
+      title: "Ouvimos o seu problema",
       description: "Antes de qualquer linha de código, entendemos o seu problema de negócio. Sem tecniquês. Uma conversa franca e sem compromisso.",
       borderHover: "hover:border-[#00D4FF]/40",
       bgLight: "bg-[#00D4FF]/5 text-[#00D4FF]",
@@ -26,7 +26,7 @@ export default function HowWeWork() {
       icon: ShieldCheck,
       number: "03",
       title: "Construímos junto com você",
-      description: "Você acompanha o desenvolvimento passo a passo e testa enquanto fazemos. Nada de caixas pretas.",
+      description: "Você acompanha o desenvolvimento passo a passo da sua solução em reuniões semanais.",
       borderHover: "hover:border-[#8B5CF6]/40",
       bgLight: "bg-[#8B5CF6]/5 text-[#8B5CF6]",
       iconBgHover: "group-hover:bg-[#8B5CF6] group-hover:text-white",
@@ -52,7 +52,7 @@ export default function HowWeWork() {
             Como a Plazas Tech trabalha
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
-            Nosso processo: Simples, claro e em português.
+            Nosso processo: Ouvir, Entender e Desenvolver.
           </h2>
         </div>
 

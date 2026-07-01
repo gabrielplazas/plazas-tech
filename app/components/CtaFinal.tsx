@@ -22,7 +22,7 @@ export default function CtaFinal() {
               Vamos conversar
             </h2>
             <p className="text-gray-300 font-light text-base sm:text-lg mb-8 leading-relaxed max-w-xl">
-              Mande uma mensagem para a Plazas Tech. Vamos bater um papo, entender o seu momento e descobrir como colocar sua ideia para rodar. Sem custo, sem burocracia.
+              Mande uma mensagem para a Plazas Tech. Vamos bater um papo, entender o seu momento e descobrir como colocar sua ideia para rodar. Sem burocracia.
             </p>
 
             {/* Primary Action Button (WhatsApp) */}
