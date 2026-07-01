@@ -3,22 +3,22 @@ import { Globe, Monitor, Smartphone } from 'lucide-react'
 export default function Services() {
   const services = [
     {
-      icon: <Globe size={26} />,
-      title: 'Sites & Landing Pages',
+      icon: <Smartphone size={26} />,
+      title: 'Sites e Aplicativos',
       description:
-        'Criamos páginas de alta conversão, rápidas, otimizadas para SEO e com design responsivo sob medida para o seu público.',
+        'Construímos do zero. Sites rápidos para vender mais e aplicativos completos (iOS e Android) criados etapa por etapa, lado a lado com você.',
     },
     {
       icon: <Monitor size={26} />,
-      title: 'Sistemas Web',
+      title: 'Sistemas Sob Medida',
       description:
-        'Automatizamos processos internos, organizamos fluxos de dados complexos e desenvolvemos painéis administrativos sob medida.',
+        'Adeus planilhas confusas. Transformamos seus processos manuais em ferramentas web automatizadas, seguras e fáceis de usar.',
     },
     {
-      icon: <Smartphone size={26} />,
-      title: 'Aplicativos Mobile',
+      icon: <Globe size={26} />,
+      title: 'Resgate & Deploy de IA',
       description:
-        'Desenvolvimento sob medida para iOS e Android. Projetamos interfaces intuitivas que geram engajamento real.',
+        'Criou seu sistema com ChatGPT ou Claude e não sabe o que fazer agora? Nós assumimos. Revisamos a segurança, arrumamos a casa e colocamos seu projeto no ar.',
     },
   ]
 
@@ -32,9 +32,6 @@ export default function Services() {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-50 tracking-tight">
             Nossos Serviços
           </h2>
-          <p className="text-indigo-100/70 text-sm sm:text-base font-light mt-3 leading-relaxed">
-            Construímos soluções tecnológicas com foco em usabilidade, performance e objetivos de negócio.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

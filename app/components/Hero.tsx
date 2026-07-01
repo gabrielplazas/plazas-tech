@@ -16,15 +16,14 @@ export default function Hero() {
         </p>
         
         <h1 className="font-extrabold text-4xl sm:text-6xl md:text-7xl leading-tight tracking-tight text-[#1E0A5C] mb-6 max-w-4xl">
-          Conectamos sua ideia <br className="hidden sm:inline" />
+          Sua ideia no ar. <br className="hidden sm:inline" />
           <span className="bg-gradient-to-r from-[#1E0A5C] via-[#6B21C8] to-[#00D4FF] bg-clip-text text-transparent">
-            ao código de alta performance.
+            A tecnologia deixa com a gente.
           </span>
         </h1>
 
         <p className="text-base sm:text-xl text-gray-500 font-light max-w-2xl mb-10 leading-relaxed mx-auto">
-          A Plazas Tech transforma conceitos inovadores em sites rápidos, sistemas robustos e 
-          aplicativos fluidos — com transparência, clareza e alto nível técnico do início ao fim.
+          Seja para criar um site do zero, desenvolver um aplicativo ou colocar em produção aquele sistema que você começou com IA. A Plazas Tech traduz o seu negócio em tecnologia real, sem jargões e sem dor de cabeça.
         </p>
 
         <div className="flex justify-center w-full">

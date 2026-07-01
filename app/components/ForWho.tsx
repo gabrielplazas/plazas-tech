@@ -4,18 +4,18 @@ export default function ForWho() {
   const benefits = [
     {
       icon: UserCheck,
-      title: "Parceria Direta",
-      description: "Esqueça gerentes de conta ou intermediários burocráticos. Na Plazas Tech, você tem contato direto com os sócios e desenvolvedores que estãoconstruindo sua solução."
-    },
-    {
-      icon: Eye,
-      title: "Transparência Absoluta",
-      description: "Acompanhe o desenvolvimento com reuniões semanais e visibilidade contínua do progresso. Você sempre saberá exatamente em que etapa o projeto está."
+      title: "O Empreendedor",
+      description: "Você tem uma ideia genial para um app ou sistema, mas não entende de programação para tirar do papel."
     },
     {
       icon: Zap,
-      title: "Arquitetura Moderna & Performance",
-      description: "Escrevemos códigos limpos e rápidos. Focamos em tecnologias modernas para garantir carregamento instantâneo, escalabilidade e excelente otimização para SEO."
+      title: 'A Startup "Faça Você Mesmo"',
+      description: "Você usou Inteligência Artificial para gerar o código do seu sistema, mas travou na hora de colocar no ar (deploy) e garantir que ele seja seguro de verdade."
+    },
+    {
+      icon: Eye,
+      title: "A Empresa",
+      description: "Seu negócio precisa de um site profissional ou um sistema interno para automatizar processos e parar de perder tempo com planilhas."
     },
   ]
 
@@ -27,15 +27,15 @@ export default function ForWho() {
 
       <div className="max-w-6xl mx-auto w-full relative z-10">
         <div className="max-w-3xl mx-auto mb-16 text-center flex flex-col items-center">
-          <p className="text-xs font-semibold tracking-widest uppercase text-[#00000] mb-3">
+          <p className="text-xs font-semibold tracking-widest uppercase text-[#00D4FF] mb-3">
             Para quem é a Plazas Tech
           </p>
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight leading-tight">
-            Sua ideia desenvolvida com <br className="hidden sm:inline" />
-            <span className="text-[#00D4FF]">compromisso e proximidade real.</span>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight leading-tight">
+            Você foca no seu negócio. <br className="hidden sm:inline" />
+            <span className="text-[#00D4FF]">Nós focamos no código.</span>
           </h2>
           <p className="text-gray-300 text-base sm:text-lg font-light mt-6 leading-relaxed">
-            Unimos proximidade humana com excelência em engenharia de software para tirar suas ideias do papel com qualidade máxima.
+            A Plazas Tech nasceu para ajudar quem precisa de tecnologia, mas não quer complicação. Nós somos o parceiro ideal se você se encaixa em um desses cenários:
           </p>
         </div>
 

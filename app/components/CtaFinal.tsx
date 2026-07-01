@@ -16,13 +16,13 @@ export default function CtaFinal() {
           {/* Left side: Value proposition & Main WhatsApp CTA */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             <p className="text-xs font-semibold tracking-widest uppercase text-[#00D4FF] mb-3">
-              Contato
+              Chega de travar na tecnologia.
             </p>
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 leading-tight">
-              Vamos começar o seu projeto?
+              Vamos conversar
             </h2>
             <p className="text-gray-300 font-light text-base sm:text-lg mb-8 leading-relaxed max-w-xl">
-              Fale conosco diretamente pelo WhatsApp para iniciar o seu atendimento e obter uma estimativa de prazo e valor para o seu projeto de forma rápida e descomplicada.
+              Mande uma mensagem para a Plazas Tech. Vamos bater um papo, entender o seu momento e descobrir como colocar sua ideia para rodar. Sem custo, sem burocracia.
             </p>
 
             {/* Primary Action Button (WhatsApp) */}
